@@ -1,0 +1,9 @@
+node_modules
+example
+.DS_Store
+.jshintrc
+www
+.tmp
+*.sublime-*
+mongod.conf
+rev-manifest.json
