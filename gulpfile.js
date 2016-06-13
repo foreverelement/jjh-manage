@@ -104,7 +104,7 @@ gulp.task('watch', ['connect', 'serve'], function() {
     gulp.watch('app/less/**/*.less', ['styles']);
     gulp.watch('app/js/**/*.js', ['scripts']);
     gulp.watch('app/font/**/*', ['fonts']);
-    gulp.watch('bower.json', ['wiredep', 'fonts']);
+    //gulp.watch('bower.json', ['wiredep', 'fonts']);
 
 });
 
@@ -142,7 +142,7 @@ gulp.task('connect', function() {
 
 gulp.task('dev', function() {
 
-  // Open Test Page
+  // 打开测试页
   var connect = require('connect');
   var app = connect()
     .use(connect.static('www'))
@@ -161,7 +161,7 @@ gulp.task('serve', ['connect'], function() {
 });
 
 // 生成全部文件
-gulp.task('build', ['changename', 'images', 'fonts', 'extras','dev'], function() {
+gulp.task('build', ['changename', 'images', 'fonts', 'extras','watch'], function() {
     return gulp.src('www/**/*').pipe($.size({ title: 'build', gzip: true }));
 });
 
