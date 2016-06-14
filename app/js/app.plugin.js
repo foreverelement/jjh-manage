@@ -232,5 +232,10 @@
     });
 
 
+	// 多选下拉框
+
+    $('#example-getting-started').multiselect();
+
+
   });
 }(window.jQuery);

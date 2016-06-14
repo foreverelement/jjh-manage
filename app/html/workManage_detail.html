@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>集节号企业自服务平台V1.0</title>
+  <meta name="description" content="集节号后台管理" />
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <!-- build:css styles/common.css -->
+  <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="../css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="../css/font.css" type="text/css" cache="false" />
+  <link rel="stylesheet" href="../js/multiselect/bootstrap-multiselect.css" type="text/css" cache="false" />
+
+  <!-- endbuild -->
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="../css/app.css" type="text/css" />
+  <!-- endbuild -->
+</head>
+<body>
+  <section class="hbox stretch">
+    <!-- .aside -->
+    <aside class="bg-dark aside-sm" id="nav">
+      <section class="vbox">
+        <header class="dker nav-bar">
+          <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav">
+            <i class="icon-reorder"></i>
+          </a>
+          <a href="#" class="nav-brand" data-toggle="fullscreen">集</a>
+          <a class="btn btn-link visible-xs" data-toggle="class:show" data-target=".nav-user">
+            <i class="icon-comment-alt"></i>
+          </a>
+        </header>
+        <section>
+          <div class="lter nav-user hidden-xs pos-rlt">            
+            <div class="nav-avatar pos-rlt">
+              <a href="#" class="thumb-sm avatar animated rollIn" data-toggle="dropdown">
+                <img src="../images/avatar.jpg" alt="" class="">
+                <span class="caret caret-white"></span>
+              </a>
+              <ul class="dropdown-menu m-t-sm animated fadeInLeft">
+                <span class="arrow top"></span>
+                <li>
+                  <a href="#">设置</a>
+                </li>
+                <li>
+                  <a href="../profile.html">个人中心</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="badge bg-danger pull-right">3</span>
+                    消息
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="../docs.html">帮助</a>
+                </li>
+                <li>
+                  <a href="../signin.html">退出</a>
+                </li>
+              </ul>
+              <div class="visible-xs m-t m-b">
+                <a href="#" class="h3">17001200205</a>
+                <p><i class="icon-map-marker"></i> 北京</p>
+              </div>
+            </div>
+            <div class="nav-msg">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <b class="badge badge-white count-n">2</b>
+              </a>
+              <section class="dropdown-menu m-l-sm pull-left animated fadeInRight">
+                <div class="arrow left"></div>
+                <section class="panel bg-white">
+                  <header class="panel-heading">
+                    <strong>您有 <span class="count-n">3</span> 条消息</strong>
+                  </header>
+                  <div class="list-group">
+                    <a href="#" class="media list-group-item">
+                      <span class="pull-left thumb-sm">
+                        <img src="../images/avatar.jpg" alt="John said" class="img-circle">
+                      </span>
+                      <span class="media-body block m-b-none">
+                        更新企业通讯录<br>
+                        <small class="text-muted">2016年4月12日</small>
+                      </span>
+                    </a>
+                    <a href="#" class="media list-group-item">
+                      <span class="media-body block m-b-none">
+                        添加后台维护日志<br>
+                        <small class="text-muted">2016年5月1日</small>
+                      </span>
+                    </a>
+                  </div>
+                  <footer class="panel-footer text-sm">
+                    <a href="#" class="pull-right"><i class="icon-cog"></i></a>
+                    <a href="#">查看所有消息</a>
+                  </footer>
+                </section>
+              </section>
+            </div>
+          </div>
+          <nav class="nav-primary hidden-xs">
+            <ul class="nav">
+              <li>
+                <a href="javascript:;">
+                  <i class="icon-home"></i>
+                  <span>主页</span>
+                </a>
+              </li>              
+              <li class="dropdown-submenu active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="icon-laptop"></i>
+                  <span>工作</span>
+                </a>
+                <ul class="dropdown-menu">                
+                  <li>
+                    <a href="#">公告管理</a>
+                  </li>
+                  <li>
+                    <a href="#">任务管理</a>
+                  </li>
+                  <li>
+                    <a href="#">日志管理</a>
+                  </li>
+                  <li>
+                    <a href="#">签到管理</a>
+                  </li>
+                  <li>
+                    <a href="#">考勤管理</a>
+                  </li>
+                  <li>
+                    <a href="#">客户资源管理</a>
+                  </li>
+                </ul>
+              </li>
+               <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="icon-bar-chart"></i>
+                  <span>统计分析</span>
+                </a>
+                <ul class="dropdown-menu">                
+                  <li>
+                    <a href="#">工作统计</a>                    
+                  </li>
+                  <li>
+                    <a href="#">电话会议数据分析</a>              
+                  </li>
+                  <li>
+                    <a href="#">企业总机来电分析</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <b class="badge bg-primary pull-right">3</b>
+                  <i class="icon-credit-card"></i>
+                  <span>账单查询</span>
+                </a>
+                <ul class="dropdown-menu">                
+                  <li>
+                    <a href="#">企业总机详单</a>                    
+                  </li>
+                  <li>
+                    <a href="#">电话会议详单</a>              
+                  </li>
+                  <li>
+                    <a href="#">企业账单</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icon-cogs"></i>
+                  <span>平台设置</span>
+                </a>
+                <ul class="dropdown-menu">                
+                  <li>
+                    <a href="#">企业通讯录管理</a>                    
+                  </li>
+                  <li>
+                    <a href="#">角色管理</a>              
+                  </li>
+                  <li>
+                    <a href="#">考勤设置</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <footer class="footer bg-gradient hidden-xs">
+          <a href="#nav" data-toggle="class:nav-vertical" class="btn btn-sm btn-link m-l-n-sm">
+            <i class="icon-reorder"></i>
+          </a>
+        </footer>
+      </section>
+    </aside>
+    <!-- /.aside -->
+    <!-- .vbox -->
+    <section id="content">
+      <section class="vbox">
+        <header class="header bg-light bg-gradient b-b">
+          <p>集节号企业自服务平台</p>
+        </header>
+        <section class="scrollable hover">
+              <div class="wrapper b-b">
+                <a href="#" data-toggle="class" class="pull-left"><i class="icon-star-empty icon-xlarge text"></i><i class="icon-star text-warning icon-xlarge text-active"></i></a>
+                <h4 class="m-n">关于8月15日全体员工会议通知</h4>
+              </div>
+              <div class="text-sm padder m-t">
+                <div class="block clearfix m-b">
+                  <span class="inline m-t-xs">综合办
+                  &lt;zhb@sharingmobile.cn&gt; 至 全体员工</span>
+                  <div class="pull-right inline">6月 12日 (<em>4 天 前</em>)                         
+                  </div>
+                </div>
+                <p>Mr. Soe</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper sodales nisi nec condimentum. Mauris convallis mauris at pellentesque volutpat. Phasellus at ultricies neque, quis malesuada augue. Donec eleifend condimentum nisl eu consectetur. Integer eleifend, nisl venenatis consequat iaculis, lectus arcu malesuada sem, dapibus porta quam lacus eu neque.</p>
+                <blockquote>
+                  <em>Morbi nec nunc condimentum, egestas dui nec, fermentum diam. Vivamus vel tincidunt libero, vitae elementum ligula. Nunc placerat purus quam, ac adipiscing arcu rutrum eu. Vestibulum adipiscing ut augue ut auctor. Vestibulum nec lorem imperdiet nibh mollis gravida ut a justo.<br><br>Vestibulum ullamcorper sodales nisi nec condimentum. Mauris convallis mauris at pellentesque volutpat. Phasellus at ultricies neque, quis malesuada augue. Donec eleifend condimentum nisl eu consectetur. Integer eleifend, nisl venenatis consequat iaculis</em>
+                </blockquote>
+                <div class="show">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper sodales nisi nec condimentum. Mauris convallis mauris at pellentesque volutpat. Phasellus at ultricies neque, quis malesuada augue. Donec eleifend condimentum nisl eu consectetur. Integer eleifend, nisl venenatis consequat iaculis, lectus arcu malesuada sem, dapibus porta quam lacus eu neque.</p>
+                  <p>Duis non malesuada est, quis congue nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper sodales nisi nec condimentum. Mauris convallis mauris at pellentesque volutpat. Phasellus at ultricies neque, quis malesuada augue. Donec eleifend condimentum nisl eu consectetur. Integer eleifend, nisl venenatis consequat iaculis, lectus arcu malesuada sem, dapibus porta quam lacus eu neque.</p>
+                  <p>Duis non malesuada est, quis congue nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper sodales nisi nec condimentum. Mauris convallis mauris at pellentesque volutpat. Phasellus at ultricies neque, quis malesuada augue. Donec eleifend</p>
+                </div>
+                <p>Best Regards<br>Mical</p>
+              </div>
+              <div class="padder">
+                <div class="panel text-sm bg-light">
+                  <div class="panel-body">
+                    Click here to <a href="#">Reply</a> or <a href="#">Forward</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+      </section>
+    </section>
+    <!-- /.vbox -->
+  </section>
+   <div class="modal fade" id="modal-form">
+    <div class="modal-dialog">
+       <section class="panel">
+          <header class="panel-heading font-bold">新增公告</header>
+          <div class="panel-body">
+            <form role="form">
+              <div class="form-group">
+                <label>标题</label>
+                <input type="text" class="form-control" placeholder="公告标题">
+              </div>
+              <div class="form-group">
+                <label>内容</label>
+                <div id="editor" class="form-control" style="overflow:scroll;height:150px;max-height:150px" contenteditable="true">
+                  
+                </div>
+              </div>
+              <div class="form-group">
+                  <select id="example-getting-started" multiple="multiple">
+                    <option value="0">总裁办</option>
+                    <option value="1">综合办</option>
+                    <option value="2">研发部</option>
+                    <option value="3">产品创新部</option>
+                    <option value="4">质量管理部</option>
+                    <option value="5">行政部</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-sm btn-success">提交</button>
+              <button type="submit" class="btn btn-sm btn-default">取消</button>  
+            </form>
+          </div>
+        </section>
+    </div><!-- /.modal-dialog -->
+  </div>
+  <!--[if lt IE 9]>
+    <!-- build:js scripts/ie.js -->
+    <script src="../js/ie/respond.min.js" cache="false"></script>
+    <script src="../js/ie/html5.js" cache="false"></script>
+    <script src="../js/ie/fix.js" cache="false"></script>
+    <!-- endbuild -->
+  <![endif]-->
+  <!-- / footer -->
+  <!-- build:js scripts/grid.js -->
+  <script src="../js/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../js/bootstrap.js"></script>
+  <!-- App -->
+  <script src="../js/app.js"></script>
+  <script src="../js/app.plugin.js"></script>
+  <script src="../js/app.data.js"></script>
+  <script src="../js/multiselect/bootstrap-multiselect.js"></script>
+  <script src="../js/fuelux/fuelux.js"></script>
+  <!-- endbuild -->
+  <!-- / footer -->
+
+</body>
+</html>
