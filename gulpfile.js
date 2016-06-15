@@ -92,10 +92,10 @@ gulp.task('images', function() {
 gulp.task('watch', ['connect', 'serve'], function() {
     $.livereload.listen();
 
-    // watch for change
+    // 监听修改的内容
 
     gulp.watch([
-        'app/*.html',
+        'app/**/*.html',
         'www/css/**/.css',
         'app/js/**/.js',
         'app/images/**/*'
@@ -104,7 +104,7 @@ gulp.task('watch', ['connect', 'serve'], function() {
     gulp.watch('app/less/**/*.less', ['styles']);
     gulp.watch('app/js/**/*.js', ['scripts']);
     gulp.watch('app/font/**/*', ['fonts']);
-    //gulp.watch('bower.json', ['wiredep', 'fonts']);
+    // gulp.watch('bower.json', ['wiredep', 'fonts']);
 
 });
 
@@ -167,5 +167,5 @@ gulp.task('build', ['changename', 'images', 'fonts', 'extras','watch'], function
 
 // gulp 默认任务
 gulp.task('default', ['clean'] , function() {
-    gulp.start('build');
+    gulp.run('build');
 });
