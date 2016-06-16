@@ -167,5 +167,5 @@ gulp.task('build', ['changename', 'images', 'fonts', 'extras','watch'], function
 
 // gulp 默认任务
 gulp.task('default', ['clean'] , function() {
-    gulp.run('build');
+    gulp.start('build');
 });

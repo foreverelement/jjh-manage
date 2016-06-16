@@ -220,107 +220,172 @@
                 <header class="panel-heading">
                   任务管理
                 </header>
-                <div class="row text-sm wrapper">
-                  <div class="col-sm-12">
-                  
-                     <label>时间：</label><input class="input-sm input-s datepicker-input form-control" size="16" type="text" value="01-01-2016" data-date-format="dd-mm-yyyy"> 至 <input class="input-sm input-s datepicker-input form-control" size="16" type="text" value="01-01-2016" data-date-format="dd-mm-yyyy">
-                   
+                <div class="row wrapper" >
+                  <div class="form-horizontal form-group">
+                      <div class="col-sm-4">
+                        <label class="col-sm-3 control-label">时间</label>
+                        <div class="col-sm-9">
+                          <div class="row">
+                            <div class="col-sm-6"> <input class="datepicker-input form-control" size="16" type="text" value="01-01-2016" data-date-format="dd-mm-yyyy"> </div>
+                            <div class="col-sm-6"> <input class="datepicker-input form-control" size="16" type="text" value="01-01-2016" data-date-format="dd-mm-yyyy"></div>
+                          </div>                            
+                        </div>
+                      </div>
+                      <div class="col-sm-8">
+                          <div class="row">
+                            <div class="col-sm-2">
+                                <div class="col-sm-12">
+                                    <select class="form-control">
+                                      <option value="0">任务状态</option>
+                                      <option value="1">部门1</option>
+                                      <option value="2">部门2</option>
+                                      <option value="3">部门3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <label class="col-sm-5 control-label">发起人：</label>
+                              <div class="col-sm-7">
+                                 <input type="text" value="张红"  class="form-control">
+                              </div>
+                            </div>
+                            <div class="col-sm-4"> 
+                             <label class="col-sm-5 control-label">责任人：</label>
+                              <div class="col-sm-7">
+                                 <input type="text" value="柳叶"  class="form-control">
+                              </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#modal-form" data-toggle="modal" class="btn btn-info btn-s-xs">查询</a>
+                            </div>
+                          </div>                            
+                      </div>
                   </div>
-                  <!-- <div class="col-sm-6 m-b-xs">
-                      <select class="input-sm form-control input-s-sm inline">
-                        <option value="0">发布部门</option>
-                        <option value="1">部门1</option>
-                        <option value="2">部门2</option>
-                        <option value="3">部门3</option>
-                      </select>
-                      <button class="btn btn-sm btn-white" type="button">搜索</button>
-                  </div>
-                  <div class="col-sm-3 m-b-xs text-right">
-                      <a href="#modal-form" data-toggle="modal" class="btn btn-sm btn-info">新增</a>
-                  </div> -->
                 </div>
                 <div class="table-responsive">
                   <table class="table table-striped b-t text-sm">
                     <thead>
                       <tr>
-                        <th class="th-sortable" data-toggle="class">
-                          序号
-                        </th>
-                        <th>公告标题</th>
-                        <th>发布时间</th>
-                        <th>发布部门</th>
-                        <th width="80">操作</th>
+                        <th class="th-sortable" data-toggle="class">序号</th>
+                        <th>标识</th>
+                        <th>任务名称</th>
+                        <th>责任人</th>
+                        <th>发起人</th>
+                        <th>任务创建时间</th>
+                        <th>任务截止时间</th>
+                        <th>状态</th>
+                        <th>操作</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
+                        <td><i class="icon-flag text-danger"></i></td>
+                        <td>龙舟赛</td>
+                        <td><a href="javascript:;">胡要广</a></td>
+                        <td><a href="javascript:;">黎总</a></td>
+                        <td>2016-05-22 15:30:05</td>
+                        <td>2016-05-26 15:30:00</td>
+                        <td><span class="text-danger">进行中</span></td>
                         <td><span class="label label-success">详情</span></td>
                       </tr>
                        <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
+                        <td><i class="icon-flag text-danger"></i></td>
+                        <td>龙舟赛</td>
+                        <td><a href="javascript:;">胡要广</a></td>
+                        <td><a href="javascript:;">黎总</a></td>
+                        <td>2016-05-22 15:30:05</td>
+                        <td>2016-05-26 15:30:00</td>
+                        <td><span class="text-danger">进行中</span></td>
                         <td><span class="label label-success">详情</span></td>
                       </tr>
-                       <tr>
+                      <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
+                        <td><i class="icon-flag text-danger"></i></td>
+                        <td>龙舟赛</td>
+                        <td><a href="javascript:;">胡要广</a></td>
+                        <td><a href="javascript:;">黎总</a></td>
+                        <td>2016-05-22 15:30:05</td>
+                        <td>2016-05-26 15:30:00</td>
+                        <td><span class="text-danger">进行中</span></td>
                         <td><span class="label label-success">详情</span></td>
                       </tr>
-                       <tr>
+                      <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
+                        <td><i class="icon-flag text-danger"></i></td>
+                        <td>龙舟赛</td>
+                        <td><a href="javascript:;">胡要广</a></td>
+                        <td><a href="javascript:;">黎总</a></td>
+                        <td>2016-05-22 15:30:05</td>
+                        <td>2016-05-26 15:30:00</td>
+                        <td><span class="text-danger">进行中</span></td>
                         <td><span class="label label-success">详情</span></td>
                       </tr>
-                       <tr>
+                      <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
+                        <td><i class="icon-flag text-danger"></i></td>
+                        <td>龙舟赛</td>
+                        <td><a href="javascript:;">胡要广</a></td>
+                        <td><a href="javascript:;">黎总</a></td>
+                        <td>2016-05-22 15:30:05</td>
+                        <td>2016-05-26 15:30:00</td>
+                        <td><span class="text-danger">进行中</span></td>
                         <td><span class="label label-success">详情</span></td>
                       </tr>
-                       <tr>
+                      <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
+                        <td><i class="icon-flag text-danger"></i></td>
+                        <td>龙舟赛</td>
+                        <td><a href="javascript:;">胡要广</a></td>
+                        <td><a href="javascript:;">黎总</a></td>
+                        <td>2016-05-22 15:30:05</td>
+                        <td>2016-05-26 15:30:00</td>
+                        <td><span class="text-danger">进行中</span></td>
                         <td><span class="label label-success">详情</span></td>
                       </tr>
-                       <tr>
+                      <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
+                        <td><i class="icon-flag text-danger"></i></td>
+                        <td>龙舟赛</td>
+                        <td>胡要广</td>
+                        <td>黎总</td>
+                        <td>2016-05-22 15:30:05</td>
+                        <td>2016-05-26 15:30:00</td>
+                        <td><span class="text-danger">进行中</span></td>
                         <td><span class="label label-success">详情</span></td>
                       </tr>
-                       <tr>
+                      <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
+                        <td><i class="icon-flag text-danger"></i></td>
+                        <td>龙舟赛</td>
+                        <td><a href="javascript:;">胡要广</a></td>
+                        <td><a href="javascript:;">黎总</a></td>
+                        <td>2016-05-22 15:30:05</td>
+                        <td>2016-05-26 15:30:00</td>
+                        <td><span class="text-danger">进行中</span></td>
                         <td><span class="label label-success">详情</span></td>
                       </tr>
-                       <tr>
+                      <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
+                        <td><i class="icon-flag text-danger"></i></td>
+                        <td>龙舟赛</td>
+                        <td><a href="javascript:;">胡要广</a></td>
+                        <td><a href="javascript:;">黎总</a></td>
+                        <td>2016-05-22 15:30:05</td>
+                        <td>2016-05-26 15:30:00</td>
+                        <td><span class="text-danger">进行中</span></td>
                         <td><span class="label label-success">详情</span></td>
                       </tr>
-                       <tr>
+                      <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
+                        <td><i class="icon-flag text-danger"></i></td>
+                        <td>龙舟赛</td>
+                        <td><a href="javascript:;">胡要广</a></td>
+                        <td><a href="javascript:;">黎总</a></td>
+                        <td>2016-05-22 15:30:05</td>
+                        <td>2016-05-26 15:30:00</td>
+                        <td><span class="text-danger">进行中</span></td>
                         <td><span class="label label-success">详情</span></td>
                       </tr>
                     </tbody>
@@ -374,6 +439,5 @@
   <script src="../js/fuelux/fuelux.js"></script>
   <!-- endbuild -->
   <!-- / footer -->
-
 </body>
 </html>

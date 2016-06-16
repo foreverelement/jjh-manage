@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="../css/font.css" type="text/css" cache="false" />
   <link rel="stylesheet" href="../js/multiselect/bootstrap-multiselect.css" type="text/css" cache="false" />
+  <link rel="stylesheet" type="text/css" href="../js/datepicker/datepicker.css">
+  
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="../css/app.css" type="text/css" />
@@ -210,117 +212,146 @@
                   <ul class="breadcrumb">
                     <li><a href="#"><i class="icon-home"></i>主页</a></li>
                     <li><a href="#"><i class="icon-laptop"></i>工作</a></li>
-                    <li class="active">公告管理</li>
+                    <li class="active">签到管理</li>
                   </ul>
                   <!-- 面包屑end -->
                   <!-- 数据begin -->
                   <section class="panel">
                 <header class="panel-heading">
-                  公告管理
+                  签到管理
                 </header>
-                <div class="row text-sm wrapper">
-                  <div class="col-sm-3">
-                    <div class="input-group">
-                      <input type="text" class="input-sm form-control" placeholder="请输入关键词">
-                      
-                    </div>
-                  </div>
-                  <div class="col-sm-6 m-b-xs">
-                      <select class="input-sm form-control input-s-sm inline">
-                        <option value="0">发布部门</option>
-                        <option value="1">部门1</option>
-                        <option value="2">部门2</option>
-                        <option value="3">部门3</option>
-                      </select>
-                      <button class="btn btn-sm btn-white" type="button">搜索</button>
-                  </div>
-                  <div class="col-sm-3 m-b-xs text-right">
-                      <a href="#modal-form" data-toggle="modal" class="btn btn-sm btn-info">新增</a>
+                <div class="row wrapper" >
+                  <div class="form-horizontal form-group">
+                      <div class="col-sm-5">
+                        <label class="col-sm-3 control-label">时间:</label>
+                        <div class="col-sm-9">
+                          <div class="row">
+                            <div class="col-sm-6"> <input class="datepicker-input form-control" size="16" type="text" value="01-01-2016" data-date-format="dd-mm-yyyy"> </div>
+                            <div class="col-sm-6"> <input class="datepicker-input form-control" size="16" type="text" value="01-01-2016" data-date-format="dd-mm-yyyy"></div>
+                          </div>                            
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="row">
+                            <div class="col-sm-5">
+                                <div class="col-sm-12">
+                                    <select class="form-control">
+                                      <option value="0">选择部门</option>
+                                      <option value="1">部门1</option>
+                                      <option value="2">部门2</option>
+                                      <option value="3">部门3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="col-sm-12">
+                                    <select class="form-control">
+                                      <option value="0">选择员工</option>
+                                      <option value="1">部门1</option>
+                                      <option value="2">部门2</option>
+                                      <option value="3">部门3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <a class="btn btn-info btn-s-xs">查询</a>
+                            </div>
+                          </div>                            
+                      </div>
                   </div>
                 </div>
                 <div class="table-responsive">
                   <table class="table table-striped b-t text-sm">
                     <thead>
                       <tr>
-                        <th class="th-sortable" data-toggle="class">
-                          序号
-                        </th>
-                        <th>公告标题</th>
-                        <th>发布时间</th>
-                        <th>发布部门</th>
-                        <th width="80">操作</th>
+                        <th class="th-sortable" data-toggle="class">序号</th>
+                        <th>签到时间</th>
+                        <th>签到位置</th>
+                        <th>签到人</th>
+                        <th>所属部门</th>
+                        <th>签到</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
-                        <td><span class="label label-success">详情</span></td>
+                        <td>2015-11-20 17:50:30</td>
+                        <td><a href="javascript:;">北坞村路23号</a></td>
+                        <td><a href="javascript:;">王立军</a></td>
+                        <td>产品创新部</td>
+                        <td><span class="label label-success" data-toggle="popover" data-html="true" data-placement="top" data-content="北坞创新园23号" title="" data-original-title="<button type=&quot;button&quot; class=&quot;close pull-right&quot; data-dismiss=&quot;popover&quot;>×</button>位置">详情</span></td>
                       </tr>
                        <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
-                        <td><span class="label label-success">详情</span></td>
+                        <td>2015-11-20 17:50:30</td>
+                        <td><a href="javascript:;">北坞村路23号</a></td>
+                        <td><a href="javascript:;">王立军</a></td>
+                        <td>产品创新部</td>
+                        <td><span class="label label-success" data-toggle="popover" data-html="true" data-placement="top" data-content="北坞创新园23号" title="" data-original-title="<button type=&quot;button&quot; class=&quot;close pull-right&quot; data-dismiss=&quot;popover&quot;>×</button>位置">详情</span></td>
                       </tr>
                        <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
-                        <td><span class="label label-success">详情</span></td>
+                        <td>2015-11-20 17:50:30</td>
+                        <td><a href="javascript:;">北坞村路23号</a></td>
+                        <td><a href="javascript:;">王立军</a></td>
+                        <td>产品创新部</td>
+                        <td><span class="label label-success" data-toggle="popover" data-html="true" data-placement="top" data-content="北坞创新园23号" title="" data-original-title="<button type=&quot;button&quot; class=&quot;close pull-right&quot; data-dismiss=&quot;popover&quot;>×</button>位置">详情</span></td>
                       </tr>
                        <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
-                        <td><span class="label label-success">详情</span></td>
+                        <td>2015-11-20 17:50:30</td>
+                        <td><a href="javascript:;">北坞村路23号</a></td>
+                        <td><a href="javascript:;">王立军</a></td>
+                        <td>产品创新部</td>
+                        <td><span class="label label-success" data-toggle="popover" data-html="true" data-placement="top" data-content="北坞创新园23号" title="" data-original-title="<button type=&quot;button&quot; class=&quot;close pull-right&quot; data-dismiss=&quot;popover&quot;>×</button>位置">详情</span></td>
                       </tr>
                        <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
-                        <td><span class="label label-success">详情</span></td>
+                        <td>2015-11-20 17:50:30</td>
+                        <td><a href="javascript:;">北坞村路23号</a></td>
+                        <td><a href="javascript:;">王立军</a></td>
+                        <td>产品创新部</td>
+                        <td><span class="label label-success" data-toggle="popover" data-html="true" data-placement="top" data-content="北坞创新园23号" title="" data-original-title="<button type=&quot;button&quot; class=&quot;close pull-right&quot; data-dismiss=&quot;popover&quot;>×</button>位置">详情</span></td>
                       </tr>
                        <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
-                        <td><span class="label label-success">详情</span></td>
+                        <td>2015-11-20 17:50:30</td>
+                        <td><a href="javascript:;">北坞村路23号</a></td>
+                        <td><a href="javascript:;">王立军</a></td>
+                        <td>产品创新部</td>
+                        <td><span class="label label-success" data-toggle="popover" data-html="true" data-placement="top" data-content="北坞创新园23号" title="" data-original-title="<button type=&quot;button&quot; class=&quot;close pull-right&quot; data-dismiss=&quot;popover&quot;>×</button>位置">详情</span></td>
                       </tr>
                        <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
-                        <td><span class="label label-success">详情</span></td>
+                        <td>2015-11-20 17:50:30</td>
+                        <td><a href="javascript:;">北坞村路23号</a></td>
+                        <td><a href="javascript:;">王立军</a></td>
+                        <td>产品创新部</td>
+                        <td><span class="label label-success" data-toggle="popover" data-html="true" data-placement="top" data-content="北坞创新园23号" title="" data-original-title="<button type=&quot;button&quot; class=&quot;close pull-right&quot; data-dismiss=&quot;popover&quot;>×</button>位置">详情</span></td>
                       </tr>
                        <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
-                        <td><span class="label label-success">详情</span></td>
+                        <td>2015-11-20 17:50:30</td>
+                        <td><a href="javascript:;">北坞村路23号</a></td>
+                        <td><a href="javascript:;">王立军</a></td>
+                        <td>产品创新部</td>
+                        <td><span class="label label-success" data-toggle="popover" data-html="true" data-placement="top" data-content="北坞创新园23号" title="" data-original-title="<button type=&quot;button&quot; class=&quot;close pull-right&quot; data-dismiss=&quot;popover&quot;>×</button>位置">详情</span></td>
                       </tr>
                        <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
-                        <td><span class="label label-success">详情</span></td>
+                        <td>2015-11-20 17:50:30</td>
+                        <td><a href="javascript:;">北坞村路23号</a></td>
+                        <td><a href="javascript:;">王立军</a></td>
+                        <td>产品创新部</td>
+                        <td><span class="label label-success" data-toggle="popover" data-html="true" data-placement="top" data-content="北坞创新园23号" title="" data-original-title="<button type=&quot;button&quot; class=&quot;close pull-right&quot; data-dismiss=&quot;popover&quot;>×</button>位置">详情</span></td>
                       </tr>
                        <tr>
                         <td>1</td>
-                        <td>17日上午公司有重要贵宾来访</td>
-                        <td>2016-6-15 15:30:20</td>
-                        <td>行政部</td>
-                        <td><span class="label label-success">详情</span></td>
+                        <td>2015-11-20 17:50:30</td>
+                        <td><a href="javascript:;">北坞村路23号</a></td>
+                        <td><a href="javascript:;">王立军</a></td>
+                        <td>产品创新部</td>
+                        <td><span class="label label-success" data-toggle="popover" data-html="true" data-placement="top" data-content="北坞创新园23号" title="" data-original-title="<button type=&quot;button&quot; class=&quot;close pull-right&quot; data-dismiss=&quot;popover&quot;>×</button>位置">详情</span></td>
                       </tr>
                     </tbody>
                   </table>
@@ -352,34 +383,46 @@
     </section>
     <!-- /.vbox -->
   </section>
-   <div class="modal fade" id="modal-form">
+  <div class="modal fade in" id="modal-form" aria-hidden="false">
     <div class="modal-dialog">
        <section class="panel">
           <header class="panel-heading font-bold">新增公告</header>
           <div class="panel-body">
-            <form role="form">
-              <div class="form-group">
-                <label>标题</label>
-                <input type="text" class="form-control" placeholder="公告标题">
-              </div>
-              <div class="form-group">
-                <label>内容</label>
-                <div id="editor" class="form-control" style="overflow:scroll;height:150px;max-height:150px" contenteditable="true">
-                  
+            <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-lg-2 text-right">汇报人：</label>
+                  <div class="col-lg-10">
+                    <strong>Andy</strong>，<strong>柳智宇</strong>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                  <select id="example-getting-started" multiple="multiple">
-                    <option value="0">总裁办</option>
-                    <option value="1">综合办</option>
-                    <option value="2">研发部</option>
-                    <option value="3">产品创新部</option>
-                    <option value="4">质量管理部</option>
-                    <option value="5">行政部</option>
-                </select>
-              </div>
-              <button type="submit" class="btn btn-sm btn-success">提交</button>
-              <button type="submit" class="btn btn-sm btn-default">取消</button>  
+                <div class="line line-dashed line-lg pull-in"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 text-right">耗时：</label>
+                  <div class="col-lg-10">
+                    5小时
+                  </div>
+                </div>
+                <div class="line line-dashed line-lg pull-in"></div>
+                 <div class="form-group">
+                  <label class="col-lg-2 text-right">创建时间：</label>
+                  <div class="col-lg-10">
+                    2016:14:05  15:33:12
+                  </div>
+                </div>
+                <div class="line line-dashed line-lg pull-in"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 text-right">任务：</label>
+                  <div class="col-lg-10">
+                    集节号
+                  </div>
+                </div>
+                <div class="line line-dashed line-lg pull-in"></div>
+                <div class="form-group">
+                  <div class="col-lg-12">
+                    昨天辛苦各位参与会议，很多摸棱两可的功能跟UI进行了沟通和有些地方达成了共识，再此进行了记录，各位请核对是否正确，未尽事宜敬请纠正，谢谢各位百忙中参与此次产品讨论。
+                  </div>
+                </div>
+                <div class="line line-dashed line-lg pull-in"></div>
             </form>
           </div>
         </section>
@@ -391,7 +434,7 @@
     <script src="../js/ie/html5.js" cache="false"></script>
     <script src="../js/ie/fix.js" cache="false"></script>
     <!-- endbuild -->
-  <![endif]-->
+  <!--[endif]-->
   <!-- / footer -->
   <!-- build:js scripts/grid.js -->
   <script src="../js/jquery.min.js"></script>
@@ -402,10 +445,9 @@
   <script src="../js/app.plugin.js"></script>
   <script src="../js/app.data.js"></script>
   <script src="../js/multiselect/bootstrap-multiselect.js"></script>
-
+  <script src="../js/datepicker/bootstrap-datepicker.js"></script>
   <script src="../js/fuelux/fuelux.js"></script>
   <!-- endbuild -->
   <!-- / footer -->
-
 </body>
 </html>
