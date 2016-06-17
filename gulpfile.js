@@ -34,7 +34,7 @@ gulp.task('scripts', function() {
 
 
 gulp.task('html',['styles'],function(){
-    return gulp.src('app/*.html')
+    return gulp.src('app/**/*.html')
         .pipe($.useref.assets({searchPath: '{.tmp,app}'}))
         .pipe($.rev())
         .pipe($.if('*.js', $.uglify()))
@@ -48,7 +48,7 @@ gulp.task('html',['styles'],function(){
 });
 
 gulp.task('changename',['html'],function(){
-    return gulp.src(['./rev-manifest.json', 'www/*.html'])   //- 读取 rev-manifest.json 文件以及需要进行css名替换的文件
+    return gulp.src(['./rev-manifest.json', 'www/**/*.html'])   //- 读取 rev-manifest.json 文件以及需要进行css名替换的文件
         .pipe($.revCollector())                                   //- 执行文件内css名的替换
         .pipe(gulp.dest('www'));  
 });
@@ -60,7 +60,7 @@ gulp.task('fonts', function() {
 
 gulp.task('extras', function() {
     return gulp.src([
-        'app/*.*',
+        'app/**/*.*',
         '!app/*.html'
     ], {
         dot: true

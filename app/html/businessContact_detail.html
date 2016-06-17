@@ -212,19 +212,77 @@
                   <ul class="breadcrumb">
                     <li><a href="#"><i class="icon-home"></i>主页</a></li>
                     <li><a href="#"><i class="icon-laptop"></i>工作</a></li>
-                    <li class="active">考勤管理</li>
+                    <li class="active">业务联系人</li>
                   </ul>
                   <!-- 面包屑end -->
                   <!-- 数据begin -->
                   <section class="panel">
                 <header class="panel-heading">
-                  考勤管理
+                  联系人详情
                 </header>
+                <div class="row wrapper">
+					<div class="col-sm-6">
+						<section class="panel clearfix bg-success lter">
+		                  <div class="panel-body">
+		                    <div class="clear">
+		                      <h4>王瑞 <small class="text-muted">分享通信 / 产品狗</small></h4>
+							  <form class="form-horizontal">
+				                <div class="row">
+				                  <label class="col-lg-3 text-right">电话:</label><strong>17001200890</strong>
+				                </div>
+				                <div class="row">
+				                  <label class="col-lg-3 text-right">邮箱:</label><strong>foreverlement@123.com</strong>
+				                </div>
+				                <div class="row">
+				                  <label class="col-lg-3 text-right">地区:</label><strong>北京</strong>
+				                </div>
+				                <div class="row">
+				                  <label class="col-lg-3 text-right">客户类型:</label><strong>A类</strong>
+				                </div>
+				                <div class="row">
+				                	<div class="col-lg-12 text-right">录入日期:2016-08-09</div>
+				                </div>
+				              </form>
+		                    </div>
+		                  </div>
+		                </section>
+					</div> 
+					<div class="col-sm-6">
+						<section class="panel clearfix bg-info lter">
+		                  <div class="panel-body">
+		                    <div class="clear">
+		                      <form class="form-horizontal">
+				                <div class="row">
+				                  <label class="col-lg-3 text-right">录入员工:</label>
+				                  <div class="col-lg-9"><strong>汪峰</strong></div>
+				                </div>
+				                <div class="row">
+				                  <label class="col-lg-3 text-right">所属部门:</label>
+				                  <div class="col-lg-9"><strong>foreverlement@123.com</strong></div>
+				                </div>
+				                <div class="row">
+				                  <label class="col-lg-3 text-right">客户来源:</label>
+				                  <div class="col-lg-9"><strong>内部移交</strong></div>
+				                </div>
+				                <div class="row">
+				                  <label class="col-lg-3 text-right">通话信息:</label>
+				                  <div class="col-lg-9">
+				                  		<strong class="block">来电1次</strong>
+				                 		<strong class="block">去电3次</strong>
+				                  		<strong class="block">来电2次</strong>
+				                  </div>
+				                </div>
+				              </form>
+		                    </div>
+		                  </div>
+		                </section>
+					</div>                   	
+                </div>
                 <div class="row wrapper" >
                   <div class="form-horizontal form-group">
                       <div class="col-sm-5">
-                        <label class="col-sm-4 control-label">打卡时间:</label>
-                        <div class="col-sm-8">
+                        <label class="col-sm-2 control-label">时间:</label>
+                        <div class="col-sm-10">
                           <div class="row">
                             <div class="col-sm-6"> <input class="datepicker-input form-control" size="16" type="text" value="01-01-2016" data-date-format="dd-mm-yyyy"> </div>
                             <div class="col-sm-6"> <input class="datepicker-input form-control" size="16" type="text" value="01-01-2016" data-date-format="dd-mm-yyyy"></div>
@@ -233,10 +291,10 @@
                       </div>
                       <div class="col-sm-7">
                           <div class="row">
-                            <div class="col-sm-5">
+                            <div class="col-sm-7">
                             	<div class="col-sm-6">
                             		<select class="form-control">
-                                      <option value="0">选择部门</option>
+                                      <option value="0">所有类型</option>
                                       <option value="1">部门1</option>
                                       <option value="2">部门2</option>
                                       <option value="3">部门3</option>
@@ -244,190 +302,115 @@
                             	</div>
                                 <div class="col-sm-6">
                                     <select class="form-control">
-                                      <option value="0">选择员工</option>
+                                      <option value="0">所有跟进人</option>
                                       <option value="1">部门1</option>
                                       <option value="2">部门2</option>
                                       <option value="3">部门3</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
-                             	<div class="col-sm-4">
-                            		<label class="control-label">短号:</label>
-                            	</div>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-sm-2">
-                                <a class="btn btn-info btn-s-xs form-control">查询</a>
+                            <div class="col-sm-5 text-right">
+                                <a class="btn btn-s btn-info">分配</a>
                             </div>
                           </div>                           
                       </div>
                   </div>
 
                 </div>
-                <div class="wrapper">
-                	 <div class="panel wrapper bg-light">
-		                <div class="row text-center">
-		                    <div class="col-xs-4">
-		                      <a href="#">
-		                        <span class="m-b-xs h3 block">245</span>
-		                        <small class="text-muted">上班签到</small>
-		                      </a>
-		                    </div>
-		                    <div class="col-xs-4">
-		                      <a href="#">
-		                        <span class="m-b-xs h3 block">55</span>
-		                        <small class="text-muted">下班签到</small>
-		                      </a>
-		                    </div>
-		                    <div class="col-xs-4">
-		                      <a href="#">
-		                        <span class="m-b-xs h3 block">2,035</span>
-		                        <small class="text-muted">应签到</small>
-		                      </a>
-		                    </div>
-		                </div>
-	                </div>
-                </div>
                 <div class="table-responsive">
                   <table class="table table-striped b-t text-sm">
                     <thead>
                       <tr>
-                      	<th width="20"><input type="checkbox"></th>
                         <th class="th-sortable" data-toggle="class">序号</th>
-                        <th>短号</th>
-                        <th>姓名</th>
-                        <th>部门</th>
-                        <th>日期</th>
-                        <th>上班打卡</th>
-                        <th>下班打卡</th>
-                        <th>状态</th>
-                        <th>操作</th>
+                        <th>类型</th>
+                        <th>时间</th>
+                        <th>通话时长</th>
+                        <th>录入内容</th>
+                        <th>历史跟进人</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td><input type="checkbox"></td>
-                       	<td>1</td>
-                        <td>7768</td>
-                        <td>王瑞</td>
-                        <td>产品创新部</td>
-                        <td>2016-11-12</td>
-                        <td>9:00</td>
-                        <td>18:00</td>
-                        <td><span>打卡</span><span>迟到</span></td>
-                        <td><span class="label label-success" href="#modal-form" data-toggle="modal" >详情</span></td>
-                      </tr>
-                       <tr>
-                        <td><input type="checkbox"></td>
-                       	<td>1</td>
-                        <td>7768</td>
-                        <td>王瑞</td>
-                        <td>产品创新部</td>
-                        <td>2016-11-12</td>
-                        <td>9:00</td>
-                        <td>18:00</td>
-                        <td><span>打卡</span><span>迟到</span></td>
-                        <td><span class="label label-success" href="#modal-form" data-toggle="modal" >详情</span></td>
-                      </tr>
-                      <tr>
-                        <td><input type="checkbox"></td>
-                       	<td>1</td>
-                        <td>7768</td>
-                        <td>王瑞</td>
-                        <td>产品创新部</td>
-                        <td>2016-11-12</td>
-                        <td>9:00</td>
-                        <td>18:00</td>
-                        <td><span>打卡</span><span>迟到</span></td>
-                        <td><span class="label label-success" href="#modal-form" data-toggle="modal" >详情</span></td>
-                      </tr>
-                      <tr>
-                        <td><input type="checkbox"></td>
-                       	<td>1</td>
-                        <td>7768</td>
-                        <td>王瑞</td>
-                        <td>产品创新部</td>
-                        <td>2016-11-12</td>
-                        <td>9:00</td>
-                        <td>18:00</td>
-                        <td><span>打卡</span><span>迟到</span></td>
-                        <td><span class="label label-success" href="#modal-form" data-toggle="modal" >详情</span></td>
-                      </tr>
-                      <tr>
-                        <td><input type="checkbox"></td>
-                       	<td>1</td>
-                        <td>7768</td>
-                        <td>王瑞</td>
-                        <td>产品创新部</td>
-                        <td>2016-11-12</td>
-                        <td>9:00</td>
-                        <td>18:00</td>
-                        <td><span>打卡</span><span>迟到</span></td>
-                        <td><span class="label label-success" href="#modal-form" data-toggle="modal" >详情</span></td>
-                      </tr>
-                      <tr>
-                        <td><input type="checkbox"></td>
-                       	<td>1</td>
-                        <td>7768</td>
-                        <td>王瑞</td>
-                        <td>产品创新部</td>
-                        <td>2016-11-12</td>
-                        <td>9:00</td>
-                        <td>18:00</td>
-                        <td><span>打卡</span><span>迟到</span></td>
-                        <td><span class="label label-success" href="#modal-form" data-toggle="modal" >详情</span></td>
-                      </tr>
-                      <tr>
-                        <td><input type="checkbox"></td>
-                       	<td>1</td>
-                        <td>7768</td>
-                        <td>王瑞</td>
-                        <td>产品创新部</td>
-                        <td>2016-11-12</td>
-                        <td>9:00</td>
-                        <td>18:00</td>
-                        <td><span>打卡</span><span>迟到</span></td>
-                        <td><span class="label label-success" href="#modal-form" data-toggle="modal" >详情</span></td>
-                      </tr>
-                      <tr>
-                        <td><input type="checkbox"></td>
-                       	<td>1</td>
-                        <td>7768</td>
-                        <td>王瑞</td>
-                        <td>产品创新部</td>
-                        <td>2016-11-12</td>
-                        <td>9:00</td>
-                        <td>18:00</td>
-                        <td><span>打卡</span><span>迟到</span></td>
-                        <td><span class="label label-success" href="#modal-form" data-toggle="modal" >详情</span></td>
-                      </tr>
-                      <tr>
-                        <td><input type="checkbox"></td>
-                       	<td>1</td>
-                        <td>7768</td>
-                        <td>王瑞</td>
-                        <td>产品创新部</td>
-                        <td>2016-11-12</td>
-                        <td>9:00</td>
-                        <td>18:00</td>
-                        <td><span>打卡</span><span>迟到</span></td>
-                        <td><span class="label label-success" href="#modal-form" data-toggle="modal" >详情</span></td>
-                      </tr>
-                      <tr>
-                        <td><input type="checkbox"></td>
-                       	<td>1</td>
-                        <td>7768</td>
-                        <td>王瑞</td>
-                        <td>产品创新部</td>
-                        <td>2016-11-12</td>
-                        <td>9:00</td>
-                        <td>18:00</td>
-                        <td><span>打卡</span><span>迟到</span></td>
-                        <td><span class="label label-success" href="#modal-form" data-toggle="modal" >详情</span></td>
-                      </tr>
+	                    <tr>
+	                       	<td>1</td>
+	                        <td>客户来电</td>
+	                        <td>2016-02-02</td>
+	                        <td>通话时长</td>
+	                        <td>录入内容</td>
+	                        <td>王瑞</td>
+	                    </tr>
+	                    <tr>
+	                       	<td>1</td>
+	                        <td>客户来电</td>
+	                        <td>2016-02-02</td>
+	                        <td>通话时长</td>
+	                        <td>录入内容</td>
+	                        <td>王瑞</td>
+	                    </tr>
+	                    <tr>
+	                       	<td>1</td>
+	                        <td>客户来电</td>
+	                        <td>2016-02-02</td>
+	                        <td>通话时长</td>
+	                        <td>录入内容</td>
+	                        <td>王瑞</td>
+	                    </tr>
+	                    <tr>
+	                       	<td>1</td>
+	                        <td>客户来电</td>
+	                        <td>2016-02-02</td>
+	                        <td>通话时长</td>
+	                        <td>录入内容</td>
+	                        <td>王瑞</td>
+	                    </tr>
+	                    <tr>
+	                       	<td>1</td>
+	                        <td>客户来电</td>
+	                        <td>2016-02-02</td>
+	                        <td>通话时长</td>
+	                        <td>录入内容</td>
+	                        <td>王瑞</td>
+	                    </tr>
+	                    <tr>
+	                       	<td>1</td>
+	                        <td>客户来电</td>
+	                        <td>2016-02-02</td>
+	                        <td>通话时长</td>
+	                        <td>录入内容</td>
+	                        <td>王瑞</td>
+	                    </tr>
+	                    <tr>
+	                       	<td>1</td>
+	                        <td>客户来电</td>
+	                        <td>2016-02-02</td>
+	                        <td>通话时长</td>
+	                        <td>录入内容</td>
+	                        <td>王瑞</td>
+	                    </tr>
+	                    <tr>
+	                       	<td>1</td>
+	                        <td>客户来电</td>
+	                        <td>2016-02-02</td>
+	                        <td>通话时长</td>
+	                        <td>录入内容</td>
+	                        <td>王瑞</td>
+	                    </tr>
+	                    <tr>
+	                       	<td>1</td>
+	                        <td>客户来电</td>
+	                        <td>2016-02-02</td>
+	                        <td>通话时长</td>
+	                        <td>录入内容</td>
+	                        <td>王瑞</td>
+	                    </tr>
+	                    <tr>
+	                       	<td>1</td>
+	                        <td>客户来电</td>
+	                        <td>2016-02-02</td>
+	                        <td>通话时长</td>
+	                        <td>录入内容</td>
+	                        <td>王瑞</td>
+	                    </tr>
+                     
                     </tbody>
                   </table>
                 </div>
@@ -437,7 +420,7 @@
                       <select class="input-sm form-control input-s-sm inline">
                         <option value="0">全选</option>
                         <option value="1">反选</option>
-                        <option value="2">导出</option>
+                        <option value="2">批量分配</option>
                       </select>
                       <button class="btn btn-sm btn-white">确定</button>                  
                     </div>
@@ -466,55 +449,7 @@
     </section>
     <!-- /.vbox -->
   </section>
-  <div class="modal fade in" id="modal-form" aria-hidden="false">
-    <div class="modal-dialog">
-       <section class="panel">
-          <header class="panel-heading font-bold">王瑞的考勤详情</header>
-          <div class="panel-body">
-            <form class="form-horizontal">
-                <div class="form-group">
-                  <label class="col-lg-2 text-right">所在部门:</label>
-                  <div class="col-lg-10">
-                  		<strong>产品创新部</strong>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-lg-2 text-right">短号:</label>
-                  <div class="col-lg-10">
-                    5小时
-                  </div>
-                </div>
-                 <div class="form-group">
-                  <label class="col-lg-2 text-right">上班打卡:</label>
-                  <div class="col-lg-10">
-                    2016-14-05  15:33:12
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-lg-2 text-right">下班打卡:</label>
-                  <div class="col-lg-10">
-                     2016-14-05  15:33:12
-                  </div>
-                </div>
-                <div class="line line-dashed line-lg pull-in"></div>
-                <div class="form-group">
-                  <label class="col-lg-2 text-right">状态:</label>
-                  <div class="col-lg-10">
-                    <strong class="text-danger">迟到</strong>
-                  </div>
-                </div>
-                <div class="line line-dashed line-lg pull-in"></div>
-                <div class="form-group">
-                  <div class="col-lg-12">
-                    昨天辛苦各位参与会议，很多摸棱两可的功能跟UI进行了沟通和有些地方达成了共识，再此进行了记录，各位请核对是否正确，未尽事宜敬请纠正，谢谢各位百忙中参与此次产品讨论。
-                  </div>
-                </div>
-                <div class="line line-dashed line-lg pull-in"></div>
-            </form>
-          </div>
-        </section>
-    </div><!-- /.modal-dialog -->
-  </div>
+  
   <!--[if lt IE 9]>
     <!-- build:js scripts/ie.js -->
     <script src="../js/ie/respond.min.js" cache="false"></script>
