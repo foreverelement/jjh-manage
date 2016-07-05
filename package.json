@@ -3,8 +3,8 @@
   "name": "gulp-todo",
   "authors": [
     {
-        "name":"elemenT",
-        "email":"foreverelement@163.com"
+      "name": "elemenT",
+      "email": "foreverelement@163.com"
     }
   ],
   "engines": {
@@ -13,6 +13,7 @@
   "devDependencies": {
     "connect": "^2.14.4",
     "connect-livereload": "^0.4.0",
+    "del": "^2.2.1",
     "gulp": "^3.6.0",
     "gulp-autoprefixer": "^0.0.7",
     "gulp-bower-files": "^0.2.1",

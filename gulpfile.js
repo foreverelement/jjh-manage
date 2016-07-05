@@ -69,11 +69,12 @@ gulp.task('extras', function() {
 
 // 清除生成的文件
 gulp.task('clean', function(cb) {
-    rimraf('.tmp', function() {
+   return rimraf('.tmp', function(cb) {
         rimraf('www', function(cb){
-            $.cache.clearAll(cb);
+           $.cache.clearAll(cb);
         });
     });
+   // return $.del('www/',cb);
 });
 
 // 压缩图片
@@ -167,5 +168,5 @@ gulp.task('build', ['changename', 'images', 'fonts', 'extras','watch'], function
 
 // gulp 默认任务
 gulp.task('default', ['clean'] , function() {
-    gulp.start('build');
+    return gulp.start(['build']);
 });
